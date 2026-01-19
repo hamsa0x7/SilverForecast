@@ -1,65 +1,55 @@
 # Silver Price Directional Forecasting
 
-**Status:** Phase 0 Complete ✅  
-**Tier:** Production ML  
-**Goal:** Predict silver price direction (up/down) for next 30 days with >60% accuracy
+**Author:** JoJo  
+**Goal:** Predict silver price direction (up/down) for the next 30 days with >60% accuracy using Machine Learning.
 
 ---
 
-## Quick Start
+## Project Overview
 
-This project uses the **Agentic AI Data Science Playbook** to build a production-ready time series forecasting model.
+This project implements a production-ready time series forecasting pipeline to analyze 10 years of silver futures data (2016-2026). The goal is to assist in trading decisions by predicting daily price movements with high directional accuracy.
 
-**Key Info:**
-- 📊 Data: 10 years of daily silver futures (2016-2026) from Yahoo Finance
-- 🎯 Metric: Directional Accuracy > 60%
-- 🧠 Models: ARIMA, Prophet, LSTM with Attention
-- ⚡ Constraint: Real-time predictions (<1s), Interpretable
+**Key Features:**
+- **Data Source:** Daily COMEX Silver Futures (SI=F) from Yahoo Finance.
+- **Methodology:** Comparative analysis of ARIMA, Prophet, and LSTM (Deep Learning) models.
+- **Target Metric:** Directional Accuracy (Target: >60%).
+- **Constraints:** Optimized for real-time inference (<1s latency).
 
 ---
 
-## Project Structure
+## Repository Structure
+
+The project follows a modular Data Science structure:
 
 ```
 SilverForecast/
-├── documents/           # Model Card, AGENTS.md, experiment logs
-├── data/               # raw, processed, external
-├── notebooks/          # EDA, feature engineering, modeling
-├── src/                # Production code
-├── models/             # Trained model artifacts
-├── results/            # Figures, tables, reports
-└── README.md
+├── documents/           # Detailed reports (Model Card, Data Quality, EDA)
+├── data/                # Data storage (Raw & Processed)
+├── notebooks/           # Jupyter notebooks for analysis and experimentation
+├── src/                 # Source code for features and modeling
+└── models/              # Saved model binary artifacts
 ```
 
----
+## Key Deliverables
 
-## Status
-
-✅ **Phase 0:** Problem Definition Complete  
-✅ **Phase 0.5:** Git Setup Complete  
-✅ **Phase 1:** Data Collection Complete  
-✅ **Phase 2-4:** EDA & Baseline Complete  
-✅ **Phase 5-9:** Full ML Pipeline Complete (Notebook)
+1.  **Analysis Notebook:** [`notebooks/complete_ml_pipeline.ipynb`](notebooks/complete_ml_pipeline.ipynb) - Contains the full end-to-end pipeline including EDA, feature engineering, and model training.
+2.  **Model Card:** [`documents/ModelCard.md`](documents/ModelCard.md) - Constitutional documentation defining model scope, limitations, and performance metrics.
+3.  **Baseline Results:** Achieved **53.60%** accuracy with a naive persistence baseline, establishing the floor for ML model performance.
 
 ---
 
-## Constitutional Document
+## Getting Started
 
-See [`documents/ModelCard.md`](documents/ModelCard.md) for complete specifications.
-
-## Key Results
-
-- **Baseline:** 53.60% (Naive Persistence)
-- **Target:** >60% Directional Accuracy
-- **Full Pipeline:** See [`notebooks/complete_ml_pipeline.ipynb`](notebooks/complete_ml_pipeline.ipynb)
+1.  Clone the repository.
+2.  Install dependencies (e.g., `pandas`, `sklearn`, `prophet`, `tensorflow`).
+3.  Run the pipeline notebook:
+    ```bash
+    jupyter notebook notebooks/complete_ml_pipeline.ipynb
+    ```
 
 ---
 
-## Next Steps
+## License
+MIT
 
-Project is **COMPLETE**. 
-
-To run the pipeline:
-1. Open `notebooks/complete_ml_pipeline.ipynb`
-2. Run all cells to execute training and validation
 
