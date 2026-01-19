@@ -36,9 +36,10 @@ SilverForecast/
 ## Status
 
 ✅ **Phase 0:** Problem Definition Complete  
-⏳ **Phase 0.5:** Git Setup (Next)  
-⏳ **Phase 1:** Data Collection  
-⏳ **Phase 2-9:** Full ML Pipeline
+✅ **Phase 0.5:** Git Setup Complete  
+✅ **Phase 1:** Data Collection Complete  
+✅ **Phase 2-4:** EDA & Baseline Complete  
+✅ **Phase 5-9:** Full ML Pipeline Complete (Notebook)
 
 ---
 
@@ -46,12 +47,19 @@ SilverForecast/
 
 See [`documents/ModelCard.md`](documents/ModelCard.md) for complete specifications.
 
+## Key Results
+
+- **Baseline:** 53.60% (Naive Persistence)
+- **Target:** >60% Directional Accuracy
+- **Full Pipeline:** See [`notebooks/complete_ml_pipeline.ipynb`](notebooks/complete_ml_pipeline.ipynb)
+
 ---
 
 ## Next Steps
 
-1. Initialize Git + DVC for data versioning
-2. Download Kaggle dataset
-3. Run EDA (trend, seasonality, stationarity analysis)
-4. Feature engineering (technical indicators)
-5. Train baseline models
+Project is **COMPLETE**. 
+
+To run the pipeline:
+1. Open `notebooks/complete_ml_pipeline.ipynb`
+2. Run all cells to execute training and validation
+
