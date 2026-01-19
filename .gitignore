@@ -1,0 +1,53 @@
+# Data (use DVC instead)
+data/raw/
+data/interim/
+data/processed/
+data/external/
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+
+# Models (use DVC or model registry)
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.joblib
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+env/
+.env
+.venv
+
+# Experiment artifacts (MLflow)
+mlruns/
+lightning_logs/
+wandb/
+
+# Results
+results/figures/*.png
+results/figures/*.jpg
+results/figures/*.pdf
+results/tables/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# DVC
+.dvc/cache/
